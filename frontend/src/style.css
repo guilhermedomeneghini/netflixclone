@@ -1,0 +1,145 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Noto Sans", sans-serif;
+}
+
+body{
+    background-color: #282828;}
+
+.logo {
+    padding: 2vh 6rem;
+
+}
+
+.profileContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #FFF;
+    font-weight: 300;
+    font-size: 4rem;
+    flex-direction: column;
+    height: 98vh;
+}
+
+.profiles {
+    margin-top: 2rem;
+    display: flex;
+    gap: 4rem;
+
+}
+
+.boxprofile {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    color: rgb(85, 85, 85);
+    font-size: 2rem;
+    gap: 1rem;
+}
+
+
+.boxprofile img:hover{
+    transition: 1s;
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+
+
+/* FORMULARIO */
+
+/* Fundo escuro semi-transparente */
+#overlay {
+    display: none;
+    position: fixed;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 999;
+    justify-content: center;
+    align-items: center;
+  }
+
+  /* Seu formBox */
+#formBox {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 25px 30px;
+    border-radius: 8px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    width: 320px; /* maior para melhor visualização */
+    background-color: #333; /* fundo do form */
+    color: #fff;
+    position: relative;
+  }
+  
+  /* Botão fechar */
+  #closeBtn {
+    position: absolute;
+    top: 12px;
+    right: 15px;
+    font-size: 22px;
+    color: #888;
+    cursor: pointer;
+    border: none;
+    background: none;
+    transition: color 0.3s;
+  }
+  
+  #closeBtn:hover {
+    color: #ff4b5c;
+  }
+  
+  /* Form dentro do formBox */
+  #formBox form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  /* Inputs e textarea */
+  #formBox input[type="text"],
+  #formBox input[type="email"],
+  #formBox textarea {
+    width: 100%;
+    padding: 10px 12px;
+    margin: 10px 0 18px 0;
+    border: 1.8px solid #ddd;
+    border-radius: 5px;
+    font-size: 15px;
+    transition: border-color 0.3s;
+    font-family: 'Nunito', sans-serif;
+    resize: vertical;
+    background-color: #444;
+    color: white;
+  }
+  
+  #formBox input[type="text"],
+  #formBox input[type="email"],
+  #formBox textarea {
+    box-sizing: border-box;
+    /* demais estilos */
+  }
+  
+  
+  /* Botão enviar */
+  #formBox button[type="submit"] {
+    background-color: #ff0000;
+    border: none;
+    color: white;
+    padding: 12px;
+    width: 100%;
+    font-size: 16px;
+    font-weight: 700;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    font-family: 'Nunito', sans-serif;
+  }
+  
+  #formBox button[type="submit"]:hover {
+    background-color: #cc0404;
+  }
